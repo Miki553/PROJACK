@@ -1,0 +1,70 @@
+.head{
+    background-color: rgb(228, 13, 13);
+    // width: 100vw;
+    color: white;
+    height: 70px;
+    // justify-content: center; 
+    align-items: center; 
+}
+
+
+.ranking{
+    font-size: 25px;
+    // background-color: black;
+    height: 100%;
+    color: white;
+}
+
+.imguser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+    width : 60px;
+    height: 60px;
+    
+
+}
+.potouser{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btnlogout {
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btnlogout:hover {
+  color: rgb(26, 24, 24);
+}
+
+.btnranking{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+.btnranking:hover {
+    color: rgb(26, 24, 24);
+    // background-color: rgb(131, 41, 41);
+}
+.facebuck{
+    margin-left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.facebuck:hover{
+    color: rgb(26, 24, 24);
+}

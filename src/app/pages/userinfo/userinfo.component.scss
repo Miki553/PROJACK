@@ -1,0 +1,109 @@
+body{
+    // background-color: rgb(155, 155, 155);
+    background-image: url('../../../assets/bg5.gif');
+    width: 100vw;
+    overflow: hidden;
+}
+.container-fluid{
+    background-color: rgb(219, 206, 206);
+    padding: 20px;
+    padding-left: 40px;
+    margin-top: 3%;
+    width: 90%;
+    height: 80%;
+}
+.r2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+.img5{
+    // margin-left: 10px;
+}
+.img5 + .img5{
+    margin-left: 20px;
+}
+.divimg5{
+    // height: 350px;
+    // width: 200px;
+    width: 15%;
+    // margin-left: 1%;
+    background-color: rgb(210, 177, 177);
+}
+.divimg5+.divimg5{
+    margin-left: 1%;
+}
+.divimg5 img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+
+}
+.avter{
+   margin: 0;
+   padding: 0;
+}
+.avter img{
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover;
+
+}
+
+.inpic{
+
+    padding: 5px;
+    width: 150px;
+    
+
+
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.info{
+    font-size: 20px;
+    font-weight: bold;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.editpotoinfo{
+    border: none;
+    background-color: white;
+    margin-bottom: 5px;
+}
+.login{
+    position: fixed; /* ทำให้เราสามารถใช้ z-index ได้ */
+    z-index: 9999; 
+    // width: 100%;
+    // height: 100%;
+    
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.addimg img{
+    cursor: pointer;
+}
+.card{
+    padding: 30px;
+    width: 400px;
+    border: none;
+    margin-top: 200px;
+    background-color: rgb(230, 230, 230);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

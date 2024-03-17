@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>User</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <app-head></app-head>
+    <div class="login" *ngIf="add">
+        <div class="card">
+            <mat-form-field _ngcontent-gln-c31="" appearance="outline" style="width: 100%; "  >
+                <mat-label style="color: #000000; " >title</mat-label>
+               <input type="text" matInput placeholder=""  style="color: #000000;" #title> 
+            </mat-form-field>
+            <input  type="file" (change)="OnFileSelectted($event)" #fileUpload>
+            <br>
+            <button mat-raised-button color="accent" (click)="addimg(title)"  class="btnlogin">Add Image</button>
+            <button mat-raised-button color="accent" (click)="cancle()" style="margin-top: 3px;" class="btnlogin">Cancle</button>
+        </div>
+    </div>
+
+    <div class="login" *ngIf="edit">
+        <div class="card">
+            <mat-form-field _ngcontent-gln-c31="" appearance="outline" style="width: 100%; "  >
+                <mat-label style="color: #000000; " >title</mat-label>
+               <input type="text" matInput placeholder=""  style="color: #000000;" value="{{editid.title}}" #title> 
+            </mat-form-field>
+            <!-- <input  type="file" (change)="OnFileSelectted($event)"  #fileUpload> -->
+            <!-- <br> -->
+            <button mat-raised-button color="accent" (click)="editimg(title)"  class="btnlogin">Edit Image</button>
+            <button mat-raised-button color="accent" (click)="cancle()" style="margin-top: 3px;" class="btnlogin">Cancle</button>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-2 divimg5" *ngFor="let item of Image; let i = index;">
+                <div class="row " ><span class="center">ภาพที่ {{i+1}}</span></div> 
+                <div class="row"><img  src="{{item.image}}" > </div>
+                <div class="row inpic" ><span >{{item.title}}</span></div> 
+                <div class="row inpic" ><span >ขึ้น - ลง</span></div> 
+                <!-- <div class="row inpic" ><span >ดูการฟ</span></div> -->
+                <div class="row">
+                    <div class="col-4">
+                        <button class="editpotoinfo" (click)="editpotoinfo(i)">กราฟ</button>
+                    </div>
+                    <div class="col-4">
+                        <button class="editpotoinfo" (click)="editpotoinfo(i)">แก้ไข</button>
+                    </div>
+                    <div class="col-4">
+                        <button class="editpotoinfo" (click)="deletepotoinfo(item.image_id,item.img_name)">ลบ</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-2 divimg5" *ngFor="let item of Imageres ; let i = index;">
+                <div class="row" ><span class="inpic">รูปที่ {{i+Image.length+1}}</span></div> 
+                <div class="row addimg"><img  src="https://w7.pngwing.com/pngs/602/266/png-transparent-add-image-icon.png" (click)="addpoto()"> </div>
+                <div class="row" ><span class="inpic">เพิ่มชื่อ</span></div> 
+                <div class="row" ><span class="inpic">ขึ้น - ลง</span></div> 
+                <div class="row" ><span class="inpic">ดูการฟ</span></div> 
+            </div>
+           
+            
+
+        </div>
+
+        
+
+        
+        <div class="row r2">
+            <div class="col-5">
+                <div class="row r2 " style="background-color: rgb(210, 177, 177);">
+                    <div class="col-5 avter" >
+                        
+                        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz8YVGMghP_khnmeDNhjcrD6TW6IyCFus1xg&usqp=CAU" > -->
+                        <img src="{{User.avatar}}" >
+                    </div>
+                    <div class="col-7">
+                        <span class="info">User : {{User.username}}</span><br>
+                        <span class="info">Email : {{User.email}}</span><br>
+                        <span class="info">Password : {{User.password}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 ">
+                <span  style="margin-left :35% ;align-items: center; ">รูปที่ 1  วันที่/คะแนน</span><br>
+                <!-- <img src="https://oarkm.oas.psu.ac.th/sites/default/files/users/komgrit.r/line.JPG" alt="" height="250px"> -->
+                <div  style="width: 100%; height :270px ;margin-left :10%" ><canvas id="acquisitions2"></canvas></div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+

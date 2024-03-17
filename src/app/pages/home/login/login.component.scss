@@ -1,0 +1,27 @@
+body{
+    // background-color: rgb(17, 0, 255);
+    background: none;
+    overflow: hidden;
+}
+.container-fluid{
+    margin: 0px;
+    width: 100%;
+    // padding-top: 5px;
+}
+.card{
+    padding: 10px;
+    width: 400px;
+    border: none;
+    margin-top: 200px;
+    background-color: rgb(230, 230, 230);
+   
+}
+.btnlogin{
+    width: 100px;
+
+}
+.imglogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
