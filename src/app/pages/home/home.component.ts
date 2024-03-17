@@ -52,6 +52,7 @@ export class HomeComponent {
       this.remainingTime = 0 ;
     }
     
+
     
     
   }

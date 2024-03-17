@@ -9,6 +9,7 @@ body{
     background-color: rgb(233, 145, 145);
    width: 90%;
     margin-top: 4%;
+    border-radius: 30px;
 }
 .vspic{
     display: flex;
@@ -33,10 +34,12 @@ body{
     font-size: 30px;
 }
 .OR{
-    font-size: 30px;
+    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    font-weight: bold;
 }
 .name{
     display: flex;
@@ -49,11 +52,13 @@ body{
 .btnrandom{
     border: none;
     // width: 100%;
-    background-color: white;
+    background-color: rgb(221, 83, 83);
     padding: 0;
+    border-radius: 10px;
 }
 .btnrandom :hover{
     background-color: rgb(235, 234, 234);
+    border-radius: 10px;
 }
 .login{
     position: fixed; /* ทำให้เราสามารถใช้ z-index ได้ */
@@ -64,4 +69,7 @@ body{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.potoshow{
+    border-radius: 20%;
 }
