@@ -15,8 +15,9 @@ export class AppdataService {
 //             "avatar_name": "dda.jpg",
 //             "type": "Users"
 // };
-  private apiurl = "https://apiprojac.onrender.com";
+  // private apiurl = "https://apiprojac.onrender.com";
   // private apiurl = "http://localhost:3000";
+      private apiurl = "https://vercel-api-gray.vercel.app";
 
 
   // private headerDataSubject = new BehaviorSubject<string>('https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png');
